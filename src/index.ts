@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { Side, Trade } from 'backmark';
+import { Trade } from 'backmark';
 
 export class TradePlotter {
     private trades: Trade[];
@@ -57,26 +57,3 @@ export class TradePlotter {
         console.log(`Plot saved to ${outputFilePath}`);
     }
 }
-
-// Usage
-const trades: Trade[] = [
-    {
-        orderId: '1',
-        price: 100,
-        side: Side.BUY,
-        quantity: 1,
-        createdAt: new Date('2023-01-01T10:00:00Z'),
-        balanceAfterTrade: 1000,
-    },
-    {
-        orderId: '2',
-        price: 120,
-        side: Side.SELL,
-        quantity: 1,
-        createdAt: new Date('2023-01-02T10:00:00Z'),
-        balanceAfterTrade: 1120,
-    },
-];
-
-const plotter = new TradePlotter(trades);
-plotter.plot();
