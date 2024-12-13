@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { Side, Trade } from 'backmark'; // Adjust the import based on your file structure
+import { Side, Trade } from 'backmark';
 
 export class TradePlotter {
     private trades: Trade[];
@@ -37,7 +37,6 @@ export class TradePlotter {
 
         const data = [trace];
 
-        // Generate the Plotly plot HTML
         const plotHtml = `
             <html>
                 <head>
@@ -59,9 +58,7 @@ export class TradePlotter {
     }
 }
 
-// Example Usage
-// import { Side } from './types'; // Assuming the Side enum is defined in types
-
+// Usage
 const trades: Trade[] = [
     {
         orderId: '1',
