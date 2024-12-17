@@ -40,4 +40,4 @@ A *trades_plot.html* file output will be generated.
 
 Example:
 
-![alt text](outputExample.png)
+![trades_plot.html](https://github.com/enriplaso/BackMarkPlotter/blob/master/outputExample.png)

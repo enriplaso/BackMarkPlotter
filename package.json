@@ -1,6 +1,6 @@
 {
   "name": "back-mark-plotter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Equity Curve plotting lib for Back Mark trades",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
