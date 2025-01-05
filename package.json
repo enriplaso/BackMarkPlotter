@@ -1,6 +1,6 @@
 {
   "name": "back-mark-plotter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Equity Curve plotting lib for Back Mark trades",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -26,6 +26,9 @@
     "clean": "rm -rf dist build package",
     "build": "tsc -p tsconfig.json"
   },
+  "dependencies": {
+    "plotly.js": "^2.35.2"
+  },
   "devDependencies": {
     "@eslint/js": "8.57.1",
     "@types/chai": "^4.3.12",
@@ -46,10 +49,8 @@
     "ts-node": "^10.9.2",
     "tslib": "^2.3.1",
     "typescript": "^5.3.3",
-    "typescript-eslint": "^8.12.2"
-  },
-  "dependencies": {
+    "typescript-eslint": "^8.12.2",
     "backmark": "^1.0.2",
-    "plotly.js": "^2.35.2"
+    "backmark-common-types": "1.0.1"
   }
 }

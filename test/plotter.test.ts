@@ -1,6 +1,5 @@
-import { BackTest, Side, type Trade } from 'backmark';
+import { BackTest } from 'backmark';
 import { SmaStrategy } from './strategies/smaStrategy.js';
-
 import { expect } from 'chai';
 import { TradePlotter } from '../src/index.js';
 import { access } from 'fs/promises';

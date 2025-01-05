@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { Trade } from 'backmark';
+import { Trade } from 'backmark-common-types';
 
 export class TradePlotter {
     private trades: Trade[];
